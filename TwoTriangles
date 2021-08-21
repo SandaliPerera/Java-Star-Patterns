@@ -1,0 +1,34 @@
+import java.util.*;
+public class TwoTriangles {
+
+    public static void main(String[] args) {
+        int row =5;
+
+        for(int i =0;i<row+1;i++){
+            for(int k=0;k<i;k++){
+                System.out.print(" ");
+            }
+            for(int j=row;j>i;j--){
+                System.out.print("* ");
+            }
+            if(i!=row-1) {
+                System.out.println();
+            }
+        }
+        for(int i =1;i<row+1;i++) {
+            for(int k=row;k>i;k--){
+                System.out.print(" ");
+            }
+            for(int j =0;j<i;j++){
+
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+
+}
+
+
+
+
